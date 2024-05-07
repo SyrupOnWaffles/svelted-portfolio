@@ -4,6 +4,7 @@
 
     let comments = [];
     let newMessage;
+    let currentDate = new Date().getTime();
 
     onMount(async () =>{    
         const resultList = await pb.collection('comments').getList(1,50, {
@@ -11,7 +12,7 @@
             expand:'user',
         });
         comments = resultList.items;
-
+        console.log(comments[5]);
         pb 
             .collection('comments')
             .subscribe('*',async ({action,record})=>{
@@ -40,7 +41,12 @@
 <div class="comments">
    {#each comments as comment (comment.id)}
         <div class="comment">
-            <p class="comment-text">@{comment.user}: {comment.text}</p>
+            <!-- <h5 class="from"></h5>
+            <h5 class="time"></h5> -->
+            <p class="comment-text">
+                {comment.expand?.user?.username}<br>
+                {Math.floor((currentDate - (new Date(comment.created).getTime())) / (1000 * 60 * 60 * 24))} days ago<br>
+                {comment.text}</p>
         </div>
    {/each} 
 </div>  
