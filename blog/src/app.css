@@ -94,3 +94,10 @@ hr.half{
   width: 50%;
   margin: 0 auto;
 }
+
+.comment{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
