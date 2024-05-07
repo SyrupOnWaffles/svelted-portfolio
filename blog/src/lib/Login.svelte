@@ -1,0 +1,55 @@
+<script lang="js">
+    import {currentUser,pb} from "./pocketbase";
+
+    let username;
+    let password;
+
+    async function login(){
+        await pb.collection('users').authWithPassword(username,password);
+    }
+    async function signUp(){
+        try{
+            const data = {
+                username,
+                password,
+                passwordConfirm: password,
+            }
+            const createdUser = await pb.collection('users').create(data);
+            await login()
+        } catch(err){
+            console.log(err)
+        }
+
+    }
+    function signOut(){
+        pb.authStore.clear();
+    }
+
+</script>
+
+<main>
+    {#if $currentUser}
+        <p>Signed in as {$currentUser.username}</p>
+        <button on:click={signOut}>Sign Out</button>
+
+    {:else}
+        <p>Sign up to post a comment!</p>
+        <form on:submit|preventDefault>
+            <input 
+            placeholder="Username"
+            type="text"
+            bind:value={username}
+            />
+            <br>
+            <input 
+            placeholder="Password"
+            type="password"
+            bind:value={password}
+            />
+            <br>
+            <button on:click={signUp}>Sign Up</button>
+            <button on:click={login}>Login</button>
+        </form>
+
+    {/if}
+</main> 
