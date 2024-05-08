@@ -2,7 +2,7 @@ import PocketBase from 'pocketbase';
 
 import { writable } from 'svelte/store';
 
-export const pb = new PocketBase("http://syrup.is-very.fun/api/");
+export const pb = new PocketBase("https://portfoliobackend.duckdns.org/");
 
 export const currentUser = writable(pb.authStore.model)
 
