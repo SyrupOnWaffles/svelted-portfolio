@@ -9,7 +9,9 @@
   <h1><u>syruponwaffles' portfolio</u></h1>
   <h2><u>about me</u></h2>
   <div><p>hello my name is nicholas korzeniowski and im a programmer from alberta canada.</p></div>
-  <div><p>i am familiar in many languages, primarily c, python and javascript and have used game making tools such as godot, unity, pygame, raylib and gamemaker </p></div>
+  <div><p>i am familiar in many languages, primarily c, python and javascript and have used game making tools such as godot, unity, pygame, raylib and gamemaker.<br>
+          i have also used frameworks such as svelte (for this portfolio) and flask along with databses/backends such as pocketbase (also for this portfolio) and mongodb.</p></div>
+
 
   <h2><u>projects</u></h2>
   <div><p>i have recently taken a strong interest in network programming, developing <a href="https://github.com/SyrupOnWaffles/raycaster">a simple game server</a> which syncs player positions across multiple clients, and <a href="https://github.com/SyrupOnWaffles/c-http-server">a web server written in pure c</a> </p></div>
