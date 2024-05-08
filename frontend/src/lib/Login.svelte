@@ -3,9 +3,16 @@
 
     let username;
     let password;
+    let errorMessage="";
 
     async function login(){
-        await pb.collection('users').authWithPassword(username,password);
+        try{
+            await pb.collection('users').authWithPassword(username,password);
+        }catch(err){
+            if(err == "ClientResponseError 400: Failed to authenticate."){
+                errorMessage =  "wrong username/password"
+            }
+        }
     }
     async function signUp(){
         try{
@@ -18,6 +25,9 @@
             await login()
         } catch(err){
             console.log(err)
+            if(err == "ClientResponseError 400: Failed to create record."){
+                errorMessage =  "invalid username/password. passwords must be at least 8 characters with no spaces"
+            }
         }
 
     }
@@ -33,6 +43,7 @@
         <!-- <button on:click={signOut}>Sign Out</button> -->
     {:else}
         <p>sign up to post a comment</p>
+        <p>{errorMessage}</p>
         <form on:submit|preventDefault>
             <input 
             placeholder="Username"
