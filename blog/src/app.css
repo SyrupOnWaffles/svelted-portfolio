@@ -95,6 +95,11 @@ button:focus-visible {
   }
 }
 
+img{
+  height: 350px;
+  border-radius: 8px;
+}
+
 hr.half{
   width: 50%;
   margin: 0 auto;
