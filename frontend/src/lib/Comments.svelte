@@ -40,7 +40,7 @@
 {#if $currentUser}
     <form on:submit|preventDefault={sendMessage}>
         <input maxlength="100" class="comment-input" placeholder="comment" type="text" bind:value={newMessage}/>
-        <button type="submit">send</button>
+        <!-- <button type="submit">send</button> -->
     </form> 
 {/if}
 <div class="comments">
