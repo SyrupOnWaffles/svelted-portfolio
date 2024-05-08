@@ -32,7 +32,7 @@
         };
         const createdMessage = await pb.collection('comments').create(data);
         newMessage = null;
-        document.location.reload(true)
+        document.location.reload()
     }
 </script>
 
@@ -40,7 +40,7 @@
 {#if $currentUser}
     <form on:submit|preventDefault={sendMessage}>
         <input maxlength="100" class="comment-input" placeholder="comment" type="text" bind:value={newMessage}/>
-        <button type="Submit">send</button>
+        <button type="submit">send</button>
     </form> 
 {/if}
 <div class="comments">
