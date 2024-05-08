@@ -9,7 +9,7 @@
   <h1><u>syruponwaffles' portfolio</u></h1>
   <h2><u>about me</u></h2>
   <div><p>hello my name is nicholas korzeniowski and im a programmer from alberta canada.</p></div>
-  <div><p>i am familiar in many languages including c, python and javascript and have used game making tools such as godot, unity, pygame, raylib and gamemaker </p></div>
+  <div><p>i am familiar in many languages, primarily c, python and javascript and have used game making tools such as godot, unity, pygame, raylib and gamemaker </p></div>
 
   <h2><u>projects</u></h2>
   <div><p>i have recently taken a strong interest in network programming, developing <a href="https://github.com/SyrupOnWaffles/raycaster">a simple game server</a> which syncs player positions across multiple clients, and <a href="https://github.com/SyrupOnWaffles/c-http-server">a web server written in pure c</a> </p></div>
@@ -37,7 +37,7 @@
 <!-- <div><img src="https://i.kym-cdn.com/entries/icons/original/000/018/929/graphic_design_is_my_passion.png"></div> -->
 </main>
 
-<h1>Comments</h1>
+<h1>comments</h1>
 <Login />
 <br>
 <hr class="half">

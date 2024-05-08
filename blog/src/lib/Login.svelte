@@ -29,10 +29,10 @@
 
 <main>
     {#if $currentUser}
-        <p>Signed in as {$currentUser.username}</p>
+        <p>signed in as {$currentUser.username}</p>
         <!-- <button on:click={signOut}>Sign Out</button> -->
     {:else}
-        <p>Sign up to post a comment!</p>
+        <p>sign up to post a comment</p>
         <form on:submit|preventDefault>
             <input 
             placeholder="Username"
