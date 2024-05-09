@@ -29,7 +29,7 @@
   <h2><u>achievements</u></h2>
   <div><a href="https://itch.io/jam/joystick-input-jam">winner of the analog joystick input jam #1</a></div>
   <img src="/biking.png" alt="biking"><br>
-  <small>controller game</small>
+  <small>godot game</small>
 
   <div><p>i know there were 3 submissions but thats gotta count for something right?</p></div>
   <h2><u>links</u></h2>
