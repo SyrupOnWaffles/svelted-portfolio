@@ -81,7 +81,6 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-
 @media (prefers-color-scheme: dark) {
   :root {
     color: #213547;
@@ -95,9 +94,14 @@ button:focus-visible {
   } */
 }
 
-img{
+.showcase-img{
   height: 350px;
   border-radius: 8px;
+}
+
+.pfp{
+	width:30px;
+	margin-right:5px;
 }
 
 hr.half{
@@ -112,3 +116,4 @@ hr.half{
   text-align: left;
   word-wrap: break-word;
 }
+

@@ -15,20 +15,20 @@
 
   <h2><u>projects</u></h2>
   <div><p>i have recently taken a strong interest in network programming, developing <a href="https://github.com/SyrupOnWaffles/raycaster">a simple game server</a> which syncs player positions across multiple clients, and <a href="https://github.com/SyrupOnWaffles/c-http-server">a web server written in pure c</a> </p></div>
-  <img src="/gameserver.png" alt="gameserver"><br>
+  <img class="showcase-img" src="/gameserver.png" alt="gameserver"><br>
   <small>game server</small>
 
-  <div><p>an extension of this is a realtime chat app i made akin to discord called <a href="https://syrup.is-very.fun">bannock chat</a> built with vanilla js and flask python. to increase security, i ran this server through an nginx reverse proxy to deal with encryption, rate limiting etc. i plan to do a lot more web applications in the future as well.</p></div>
-  <img src="/bannockchat.png" alt="bannockchat"><br>
+  <div><p>an extension of this is a realtime chat app i made akin to discord called <a href="https://bannockchat.l5.ca">bannock chat</a> built with vanilla js and flask python. to increase security, i ran this server through an nginx reverse proxy to deal with encryption, rate limiting etc. i plan to do a lot more web applications in the future as well.</p></div>
+  <img class="showcase-img" src="/bannockchat.png" alt="bannockchat"><br>
   <small>bannock chat</small>
 
   <div><p>in the past i have heavily delved into the world of software 3d renderering creating a model viewer in <a href="https://github.com/SyrupOnWaffles/Pygame-3D-Engine-WIP-">pygame</a> and in <a href="https://github.com/SyrupOnWaffles/terminalmodelviewer">the unix terminal</a> (this code is very bad and does not represent my current c knowledge). recently i have also delved in the world of psuedo 3d with a <a href="https://github.com/SyrupOnWaffles/raycaster">raycasting engine</a></p></div>
-  <img src="/softwarerendering.png" alt="softwarerendering"><br>
+  <img class="showcase-img" src="/softwarerendering.png" alt="softwarerendering"><br>
   <small>software renderer</small>
 
   <h2><u>achievements</u></h2>
   <div><a href="https://itch.io/jam/joystick-input-jam">winner of the analog joystick input jam #1</a></div>
-  <img src="/biking.png" alt="biking"><br>
+  <img class="showcase-img" src="/biking.png" alt="biking"><br>
   <small>godot game</small>
 
   <div><p>i know there were 3 submissions but thats gotta count for something right?</p></div>

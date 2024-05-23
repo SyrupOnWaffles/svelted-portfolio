@@ -46,9 +46,8 @@
 <div class="comments">
    {#each comments as comment (comment.id)}
         <div class="comment">
-            <!-- <h5 class="from"></h5>
-            <h5 class="time"></h5> -->
             <p class="comment-text">
+		<img class="pfp" src="https://api.dicebear.com/8.x/identicon/svg?seed={comment.expand?.user?.username}" alt="profile pic">
                 <b>{new Filter().clean(comment.expand?.user?.username)}</b><br>
                 <small>{dayjs(comment.created).fromNow()}</small><br>
                 {new Filter().clean(comment.text)}</p>
