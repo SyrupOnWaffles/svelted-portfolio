@@ -2,7 +2,7 @@ import PocketBase from 'pocketbase';
 
 import { writable } from 'svelte/store';
 
-export const pb = new PocketBase("https://portfoliobackend.mooo.com");
+export const pb = new PocketBase("https://pocketbase-zo04ssgo4swkw0o44wc0so40.thegoodestdrawers.club");
 
 export const currentUser = writable(pb.authStore.model)
 
